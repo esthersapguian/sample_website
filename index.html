@@ -1,0 +1,1254 @@
+<!doctype html>
+<html lang="en">
+ <head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Area3Convention2025</title>
+  <link rel="icon" type="image/png" href="logo.png">
+  <script src="/_sdk/element_sdk.js"></script>
+  <style>
+   body {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+      font-family: 'Helvetica Neue', 'Arial', sans-serif;
+      background: #1a2332;
+      min-height: 100%;
+      height: 100%;
+    }
+
+    html {
+      height: 100%;
+    }
+
+    nav {
+      background: #0f172a;
+      padding: 20px 0;
+      position: sticky;
+      top: 0;
+      z-index: 100;
+      box-shadow: 0 2px 10px rgba(0, 0, 0, 0.3);
+    }
+
+    .nav-container {
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 0 40px;
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+
+    .logo-section {
+      display: flex;
+      align-items: center;
+      gap: 15px;
+    }
+
+    .logo {
+      width: 50px;
+      height: 50px;
+      background: #3b82f6;
+      border-radius: 50%;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 24px;
+    }
+
+    .logo-text {
+      font-size: 20px;
+      color: #ffffff;
+      font-weight: 500;
+      margin: 0;
+    }
+
+    .nav-links {
+      display: flex;
+      gap: 40px;
+      list-style: none;
+      margin: 0;
+      padding: 0;
+    }
+
+    .nav-links a {
+      color: #94a3b8;
+      text-decoration: none;
+      font-size: 15px;
+      font-weight: 400;
+      transition: color 0.3s ease;
+      letter-spacing: 0.5px;
+      cursor: pointer;
+    }
+
+    .nav-links a:hover,
+    .nav-links a.active {
+      color: #ffffff;
+    }
+
+    .main-container {
+      max-width: 1000px;
+      margin: 0 auto;
+      padding: 0 20px;
+    }
+
+    .full-width-section {
+      width: 100%;
+      margin: 0;
+      padding: 0;
+    }
+
+    header {
+      text-align: center;
+      margin-bottom: 0;
+      background: linear-gradient(rgba(26, 35, 50, 0.85), rgba(26, 35, 50, 0.85)), url('worship.jpg') center/cover;
+      position: relative;
+      padding: 40px 20px 60px 20px;
+      margin: 0 -20px 0 -20px;
+    }
+
+    .event-title {
+      font-size: 56px;
+      color: #ffffff;
+      margin: 0 0 20px 0;
+      font-weight: 300;
+      letter-spacing: -1px;
+    }
+
+    .event-subtitle {
+      font-size: 18px;
+      color: #94a3b8;
+      margin: 30px 0;
+      font-weight: 300;
+    }
+
+    .divider {
+      width: 60px;
+      height: 2px;
+      background: #3b82f6;
+      margin: 30px auto;
+    }
+
+    .image-text-section {
+      display: grid;
+      grid-template-columns: 1fr 2fr;
+      gap: 60px;
+      background: #ffffff;
+      overflow: hidden;
+      padding: 80px 120px;
+      max-width: 100%;
+    }
+
+    .image-column {
+      background: transparent;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 0;
+    }
+
+    .feature-image {
+      font-size: 120px;
+      line-height: 1;
+    }
+
+    .text-column {
+      background: transparent;
+      display: flex;
+      align-items: center;
+      padding: 0;
+    }
+
+    .feature-text {
+      font-size: 18px;
+      color: #1a2332;
+      line-height: 1.8;
+      margin: 0;
+      font-weight: 300;
+    }
+
+    .welcome-section {
+      background: #1a2332;
+      border-radius: 2px;
+      padding: 80px 50px 60px 50px;
+      margin-bottom: 60px;
+      margin-top: 60px;
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 40px;
+    }
+
+    .vision-box, .mission-box {
+      background: rgba(255, 255, 255, 0.05);
+      padding: 40px;
+      border-radius: 8px;
+      border: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .vm-title {
+      font-size: 24px;
+      color: #3b82f6;
+      margin: 0 0 20px 0;
+      font-weight: 600;
+      letter-spacing: 1px;
+      text-transform: uppercase;
+    }
+
+    .vm-text {
+      font-size: 18px;
+      color: #e2e8f0;
+      line-height: 1.8;
+      margin: 0;
+      font-weight: 300;
+    }
+
+    .announcement-section {
+      background: transparent;
+      border-radius: 0;
+      padding: 40px 20px;
+      margin-top: 60px;
+      text-align: center;
+      border-top: 1px solid rgba(255, 255, 255, 0.1);
+      border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+    }
+
+    .announcement-label {
+      font-size: 11px;
+      color: #94a3b8;
+      margin: 0 0 12px 0;
+      font-weight: 500;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+    }
+
+    .announcement-title {
+      font-size: 18px;
+      color: #ffffff;
+      line-height: 1.6;
+      margin: 0;
+      font-weight: 400;
+      letter-spacing: 0.5px;
+    }
+
+    .day-section {
+      margin-bottom: 50px;
+    }
+
+    .day-header {
+      background: #ffffff;
+      padding: 30px 40px;
+      border-radius: 2px;
+      margin-bottom: 2px;
+    }
+
+    .day-title {
+      font-size: 14px;
+      color: #64748b;
+      margin: 0 0 8px 0;
+      font-weight: 600;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+    }
+
+    .day-date {
+      font-size: 28px;
+      color: #1a2332;
+      margin: 0;
+      font-weight: 300;
+    }
+
+    .session-container {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 20px;
+      margin-top: 2px;
+    }
+
+    .session-block {
+      background: #ffffff;
+      border-radius: 2px;
+      overflow: hidden;
+    }
+
+    .session-header {
+      background: #f1f5f9;
+      padding: 20px 30px;
+      text-align: center;
+    }
+
+    .session-title {
+      font-size: 18px;
+      color: #475569;
+      margin: 0;
+      font-weight: 500;
+      letter-spacing: 0.5px;
+    }
+
+    .program-table {
+      width: 100%;
+      border-collapse: collapse;
+    }
+
+    .program-table td {
+      padding: 16px 24px;
+      border-bottom: 1px solid #e2e8f0;
+      font-size: 16px;
+      color: #1a2332;
+    }
+
+    .program-table tr:last-child td {
+      border-bottom: none;
+    }
+
+    .program-table td:first-child {
+      width: 35%;
+      font-weight: 500;
+      color: #64748b;
+    }
+
+    .program-table td:last-child {
+      width: 65%;
+    }
+
+    .program-table tr:hover {
+      background: #f8fafc;
+    }
+
+    .image-section {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 20px;
+      margin-bottom: 60px;
+      margin-top: 60px;
+      margin-left: 50px;
+      margin-right: 50px;
+    }
+
+    .image-box {
+      background: #ffffff;
+      aspect-ratio: 1;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      font-size: 48px;
+    }
+
+    footer {
+      background: #0f172a;
+      text-align: center;
+      padding: 50px 20px;
+      margin-top: 80px;
+      width: 100%;
+    }
+
+    .footer-text {
+      font-size: 16px;
+      color: #94a3b8;
+      margin: 0;
+      font-weight: 300;
+    }
+
+    .mobile-menu-btn {
+      display: none;
+      background: none;
+      border: none;
+      color: #ffffff;
+      font-size: 24px;
+      cursor: pointer;
+      padding: 10px;
+    }
+
+    @media (max-width: 768px) {
+      .nav-container {
+        padding: 0 20px;
+      }
+
+      .mobile-menu-btn {
+        display: block;
+      }
+
+      .nav-links {
+        display: none;
+        position: absolute;
+        top: 90px;
+        left: 0;
+        right: 0;
+        background: #0f172a;
+        flex-direction: column;
+        gap: 0;
+        padding: 20px 0;
+        box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+      }
+
+      .nav-links.active {
+        display: flex;
+      }
+
+      .nav-links a {
+        padding: 15px 40px;
+      }
+
+      .event-title {
+        font-size: 36px;
+      }
+
+      .welcome-section {
+        padding: 40px 30px;
+        grid-template-columns: 1fr;
+        gap: 30px;
+      }
+
+      .announcement-section {
+        padding: 30px 20px;
+      }
+
+      .announcement-title {
+        font-size: 16px;
+      }
+
+      .day-header {
+        padding: 25px 25px;
+      }
+
+      .image-section {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .image-text-section {
+        grid-template-columns: 1fr;
+        padding: 60px 30px;
+      }
+
+      .image-column {
+        padding: 0;
+      }
+
+      .feature-image {
+        font-size: 80px;
+      }
+
+      .text-column {
+        padding: 0;
+      }
+
+      .session-container {
+        grid-template-columns: 1fr;
+        gap: 20px;
+      }
+
+      .program-table td {
+        padding: 12px 16px;
+        font-size: 14px;
+      }
+
+      .program-table td:first-child {
+        width: 30%;
+      }
+    }
+  </style>
+
+
+  <style>@view-transition { navigation: auto; }</style>
+  <script src="/_sdk/data_sdk.js" type="text/javascript"></script>
+  <script src="https://cdn.tailwindcss.com" type="text/javascript"></script>
+ </head>
+ <body>
+  <nav>
+   <div class="nav-container">
+    <div class="logo-section">
+     <div class="logo">
+       <img src="logo.png" alt="Event Image" />
+     </div>
+     <p class="logo-text" id="logoText">FBCFI</p>
+    </div>
+    <ul class="nav-links" id="navLinks">
+     <li><a href="#home" class="active">Home</a></li>
+     <li><a href="#welcome-section">About</a></li>
+     <li><a href="#program-start">Program</a></li>
+    </ul><button class="mobile-menu-btn" id="mobileMenuBtn">☰</button>
+   </div>
+  </nav>
+
+  <div class="main-container">
+   <header id="home">
+    <h1 class="event-title" id="eventTitle">AREA 3 CONVENTION 2025</h1>
+    <div class="divider"></div>
+    <p class="event-subtitle" id="eventLocation"> Free Believers in Christ Fellowship Inc.</p>
+   </header>
+  </div>
+
+  <section class="image-text-section full-width-section">
+   <div class="image-column">
+    <div class="feature-image">
+     <img src="lubic.jpg" alt="Event Image" />
+      <p style="font-size:12px; margin-top:10px; margin-left: 150px;"><em>Photo courtesy of LuBiC</em></p>
+  
+    </div>
+   </div>
+   <div class="text-column">
+    <p class="feature-text" id="featureText">Join us for a powerful gathering of believers as we come together in worship, fellowship, and celebration. This convention will be a time of spiritual renewal, where we embrace God's presence and His divine purpose for our lives. Experience transformative teachings, inspiring testimonies, and moments of deep prayer that will strengthen your faith and ignite your passion for Christ.</p>
+    </div>
+  </section>
+
+  <div class="main-container">
+   <section class="welcome-section" id="welcome-section">
+    <div class="vision-box">
+     <h3 class="vm-title">Our Vision</h3>
+     <p class="vm-text" id="visionText">To be a community of believers passionately pursuing God's presence, transforming lives through His love, and impacting our world with the Gospel of Jesus Christ.</p>
+    </div>
+    <div class="mission-box">
+     <h3 class="vm-title">Our Mission</h3>
+     <p class="vm-text" id="missionText">To equip and empower believers to live out their faith authentically, serve with excellence, and spread the message of hope and salvation to every generation.</p>
+    </div>
+   </section>
+
+   <div id="program-start"></div>
+   <div class="day-section">
+    <div class="day-header">
+     <p class="day-title">Friday</p>
+     <h2 class="day-date" id="day1Date">December 12, 2025</h2>
+    </div>
+    <div class="session-container">
+     <div class="session-block">
+      <div class="session-header">
+       <h3 class="session-title" id="day1AmTitle">Morning Session (AM)</h3>
+      </div>
+
+      <table class="program-table">
+       <tbody id="day1AmTableBody">
+
+         <tr>
+         <td>8:00 AM</td>
+         <td>Arrival and Registration</td>
+        </tr>
+        <tr>
+         <td>Opening Song</td>
+         <td>Music Team A3D2 </td>
+        </tr>
+        <tr>
+         <td>Opening Prayer</td>
+         <td>Sis. Mary Ann Viray</td>
+        </tr>
+        <tr>
+         <td>Praise and Worship</td>
+         <td>Sis. Marilou</td>
+        </tr>
+        <tr>
+         <td>Exhortation of Offering</td>
+         <td>Sis. Viernes Gonzales</td>
+        </tr>
+        <tr>
+         <td>Offertory Song</td>
+         <td>c/o Ptr. Allan Biason</td>
+        </tr>
+        <tr>
+         <td>Introductin of Speaker</td>
+         <td>Ptra. Mely Sapguian</td>
+        </tr>
+        <tr>
+          <td colspan="2" class="topic-title"><em><strong> TOPIC 1: TRAVAILING INTERCESSION</strong></em></td>
+        </tr>
+        <tr>
+         <td>Speaker</td>
+         <td>Rev. Vilma Coga-ay</td>
+        </tr>
+        <tr>
+         <td>Exhortation of Offering</td>
+         <td>Sis. Jessica Lamoste</td>
+        </tr>
+        <tr>
+         <td>Offertory Song</td>
+         <td>c/o Carosalisan Brethren</td>
+        </tr>
+        <tr>
+         <td>Announcemen/s</td>
+         <td></td>
+        </tr>
+        <tr>
+         <td>Closing Prayer</td>
+         <td>Sis. Diessibel Amok</td>
+        </tr>
+        <tr>
+         <td>Mcee</td>
+         <td>Ptra. Shirley Oggang</td>
+        </tr>
+
+       </tbody>
+      </table>
+     </div>
+
+     <div class="session-block">
+      <div class="session-header">
+       <h3 class="session-title" id="day1PmTitle">Afternoon Session (PM)</h3>
+      </div>
+      <table class="program-table">
+       <tbody id="day1PmTableBody">
+
+        <tr>
+         <td>Opening Song</td>
+         <td>Music Team A3D3 </td>
+        </tr>
+        <tr>
+         <td>Opening Prayer</td>
+         <td>Ptra. Fely Ballatong</td>
+        </tr>
+        <tr>
+         <td>Praise and Worship</td>
+         <td>Ptr. Raquel Bate</td>
+        </tr>
+        <tr>
+         <td>Exhortation of Offering</td>
+         <td>Ptra. Anita Sayap</td>
+        </tr>
+        <tr>
+         <td>Offertory Song</td>
+         <td>A3D3 Pastors</td>
+        </tr>
+        <tr>
+         <td>Introductin of Speaker</td>
+         <td>Ptra. Josefina Martin</td>
+        </tr>
+        <tr>
+          <td colspan="2" class="topic-title"><em><strong> TOPIC 2: HEALING & DELIVERANCE</strong></em></td>
+        </tr>
+        <tr>
+         <td>Speaker</td>
+         <td>Rev. Hadji Calliten</td>
+        </tr>
+        <tr>
+         <td>Exhortation of Offering</td>
+         <td>Ptr. Rolando Abongan</td>
+        </tr>
+        <tr>
+         <td>Offertory Song</td>
+         <td>A3D3 Brethren</td>
+        </tr>
+        <tr>
+         <td>3PM - FBCMPC PMES</td>
+         <td></td>
+        </tr>
+        <tr>
+         <td>Closing Prayer</td>
+         <td></td>
+        </tr>
+        <tr>
+         <td>Mcee</td>
+         <td>Ptra. Josefina Martin</td>
+        </tr>  
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+
+   <div class="day-section">
+    <div class="day-header">
+     <p class="day-title">Saturday</p>
+     <h2 class="day-date" id="day2Date">December 13, 2025</h2>
+    </div>
+
+    <div class="session-container">
+     <div class="session-block">
+      <div class="session-header">
+       <h3 class="session-title" id="day2AmTitle">Morning Session (AM)</h3>
+      </div>
+      <table class="program-table">
+       <tbody id="day2AmTableBody">
+
+        <tr>
+         <td>8:30 - 12: 00</td>
+         <td> </td>
+        </tr>
+        <tr>
+         <td>Opening Song</td>
+         <td>Music Team A3D1 </td>
+        </tr>
+        <tr>
+         <td>Opening Prayer</td>
+         <td>Ptr. Leon Bacoco</td>
+        </tr>
+         <tr>
+         <td>Praise and Worship</td>
+         <td>Sis. Angel Faith Oggang</td>
+        </tr>
+        <tr>
+         <td>Introductin of Speaker</td>
+         <td>Ptra. Hadji Calliten</td>
+        </tr>
+        <tr>
+          <td colspan="2" class="topic-title"><em><strong> TOPIC 3: BAPTISM OF THE HOLY SPIRIT</strong></em></td>
+        </tr>
+        <tr>
+         <td>Speaker</td>
+         <td>Ptra. Gloria Graal Y. Marcelo</td>
+        </tr>
+        <tr>
+         <td>Exhortation of Offering</td>
+         <td>Sis. Vivian Navalta</td>
+        </tr>
+        <tr>
+         <td>Offertory Song</td>
+         <td>c/o Ptra. Marilyn Dacpano</td>
+        </tr>
+
+        <tr>
+          <td colspan="2" class="topic-title"><em><strong> TOPIC 4: THE SPIRIT FILLED LIFE</strong></em></td>
+        </tr>
+        <tr>
+         <td>Speaker</td>
+         <td>Rev. Oliver Fabian</td>
+        </tr>
+        <tr>
+         <td>Exhortation of Offering</td>
+         <td>Sis. Jivina Menzi</td>
+        </tr>
+        <tr>
+         <td>Offertory Song</td>
+         <td>c/o Ptra. Nora Madarang</td>
+        </tr>
+
+        <tr>
+         <td>Announcemen/s</td>
+         <td></td>
+        </tr>
+        <tr>
+         <td>Closing Prayer</td>
+         <td></td>
+        </tr>
+        <tr>
+         <td>Mcee</td>
+         <td>Ptra. Astrid Lacbawan</td>
+        </tr>
+
+       </tbody>
+      </table>
+     </div>
+     <div class="session-block">
+      <div class="session-header">
+       <h3 class="session-title" id="day2PmTitle">Afternoon Session (PM)</h3>
+      </div>
+
+      <table class="program-table">
+       <tbody id="day2PmTableBody">
+
+     <tr>
+         <td>1:30 - 5 PM</td>
+         <td></td>
+        </tr>
+        <tr>
+         <td>Opening Song</td>
+         <td>Music Team A3D2 </td>
+        </tr>
+        <tr>
+         <td>Opening Prayer</td>
+         <td>Ptra. Josefina Martin</td>
+        </tr>
+        <tr>
+         <td>Praise and Worship</td>
+         <td>c/o Ptra. Melita Waclin</td>
+        </tr>
+        <tr>
+         <td>Exhortation of Offering</td>
+         <td>Bro. Bernard Macwes</td>
+        </tr>
+        <tr>
+         <td>Offertory Song</td>
+         <td> A3D3</td>
+        </tr>
+        <tr>
+         <td>Introductin of Speaker</td>
+         <td>Ptra. Hadji Calliten</td>
+        </tr>
+        <tr>
+          <td colspan="2" class="topic-title"><em><strong> TOPIC 5: FAITH & EMPOWERMENT </strong></em></td>
+        </tr>
+        <tr>
+         <td>Speaker</td>
+         <td>Bishop Moses R. Chungalao </td>
+        </tr>
+        <tr>
+         <td>Exhortation of Offering</td>
+         <td>Bro. Virgilio Paraiso</td>
+        </tr>
+        <tr>
+         <td>Offertory Song</td>
+         <td>FBCFI Guimba</td>
+        </tr>
+        <tr>
+         <td>3:00 - 5:00 PM</td>
+         <td>Worship & Intercession</td>
+        </tr>
+        <tr>
+         <td>5:00 - 9:00 PM</td>
+         <td>Healing Crusade</td>
+        </tr>
+        <tr>
+         <td>Mcee</td>
+         <td>Ptra. Rolando Abongan</td>
+        </tr>
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <div class="day-section">
+    <div class="day-header">
+     <p class="day-title">Sunday</p>
+     <h2 class="day-date" id="day3Date">December 14, 2025</h2>
+    </div>
+
+    <div class="session-container">
+     <div class="session-block">
+      <div class="session-header">
+       <h3 class="session-title" id="day3AmTitle">Morning Session (AM)</h3>
+      </div>
+      <table class="program-table">
+       <tbody id="day3AmTableBody">
+
+        <tr>
+          <td>8:30 AM - 12 PM</td>
+         <td></td>
+        </tr>
+        <tr>
+         <td>Opening Song</td>
+         <td>Music Team</td>
+        </tr>
+        <tr>
+         <td>Scipture Reading & Opening Prayer</td>
+         <td>Ptra. Josefina Martin</td>
+        </tr>
+        <tr>
+         <td>Testimony</td>
+         <td>1 Representative per District</td>
+        </tr>
+        <tr>
+         <td>Praise and Worship</td>
+         <td>Sis. Mavi Solang</td>
+        </tr>
+        <tr>
+         <td>Exhortation of Offering</td>
+         <td>Ptra. Lita Yagyagan</td>
+        </tr>
+        <tr>
+         <td>Offertory Song</td>
+         <td> A3D1 Cluster 2 Choir</td>
+        </tr>
+        <tr>
+         <td>Introductin of Speaker</td>
+         <td>Ptra. Hadji Calliten</td>
+        </tr>
+
+        <tr>
+         <td>Speaker</td>
+         <td><em><strong>Bishop Moses R. Chungalao</strong> </td>
+        </tr>
+        <tr>
+         <td>Special Offering Exhortation</td>
+         <td>Ptr. Rome Tila</td>
+        </tr>
+        <tr>
+         <td>Offertory Song</td>
+         <td>Area 3 Pastors</td>
+        </tr>
+
+        <tr>
+         <td>Announcemen/s</td>
+         <td></td>
+        </tr>
+        <tr>
+         <td>Closing Song</td>
+         <td> Music Team A3D1</td>
+        </tr>
+        <tr>
+         <td>Benediction</td>
+         <td>Ptr. Hadji Calliten</td>
+        </tr>
+        <tr>
+         <td>Mcee</td>
+         <td>Ptra. Mely Sapguian</td>
+        </tr>
+
+
+
+       </tbody>
+      </table>
+     </div>
+     <div class="session-block">
+      <div class="session-header">
+       <h3 class="session-title" id="day3PmTitle">Afternoon Session (PM)</h3>
+      </div>
+      <table class="program-table">
+       <tbody id="day3PmTableBody">
+
+        <tr>
+         <td>1:30 -5:00 PM</td>
+         <td></td>
+        </tr>
+         <tr>
+         <td>Opening Song</td>
+         <td>Music Team A3D1</td>
+        </tr>
+         <tr>
+         <td>Opening Prayer</td>
+         <td>Ptr. Hechel Sapguian</td>
+        </tr>
+
+         <tr>
+         <td>Praise and Worship</td>
+         <td>Bro. Darren Mapalo</td>
+        </tr>
+        <tr>
+         <td>Exhortation of Offerings</td>
+         <td>Ptra. Anita Sayap</td>
+        </tr>
+        <tr>
+         <td>Offertory Song</td>
+         <td> A3D3 c/o Ptra. Josefina Martin</td>
+        </tr>
+        <tr>
+         <td>Introductin of Speaker</td>
+         <td>Ptra. Hadji Calliten</td>
+        </tr>
+
+        <tr>
+         <td>Message</td>
+         <td><em><strong>Bishop Moses R. Chungalao</strong> </td>
+        </tr>
+        <tr>
+         <td>Thanskgiving Offering Exhortation</td>
+         <td>Ptr. Rome Tila</td>
+        </tr>
+        <tr>
+         <td>Offertory Song</td>
+         <td>A3D2 Pangasinan Brethren</td>
+        </tr>
+        <tr>
+         <td>Presentations</td>
+         <td></td>
+        </tr>
+        <tr>
+         <td>Announcemen/s</td>
+         <td></td>
+        </tr>
+        <tr>
+         <td>Victory Song</td>
+         <td> Music Team A3D1</td>
+        </tr>
+        <tr>
+         <td>Benediction</td>
+         <td>Bishop Moses R. Chungalao</td>
+        </tr>
+        <tr>
+         <td>Mcee</td>
+         <td>Ptra. Melita Waclin</td>
+        </tr>
+       
+
+       </tbody>
+      </table>
+     </div>
+    </div>
+   </div>
+   <section class="announcement-section">
+    <p class="announcement-label">IMPORTANT ANNOUNCEMENT</p>
+    <h2 class="announcement-title" id="announcementText">HEALING CRUSADE SATURDAY NIGHT AND RAFFLE DRAW SUNDAY AFTERNOON 4PM</h2>
+   </section>
+  </div>
+
+   <div class="image-section">
+    <div class="image-box">
+     <img src="map/3.png" alt="" />
+    </div>
+    <div class="image-box">
+     <img src="map/d1.png" alt="" />
+    </div>
+    <div class="image-box">
+     <img src="map/2.png" alt="Event Image" />
+    </div>
+   </div>
+
+  <footer>
+   <p class="footer-text" id="footerText">All are welcome. Come as you are.</p>
+  </footer>
+  <script>
+    // Mobile menu toggle
+    const mobileMenuBtn = document.getElementById('mobileMenuBtn');
+    const navLinks = document.getElementById('navLinks');
+
+    if (mobileMenuBtn) {
+      mobileMenuBtn.addEventListener('click', (e) => {
+        e.preventDefault();
+        e.stopPropagation();
+        navLinks.classList.toggle('active');
+      });
+    }
+
+    // Smooth scrolling for navigation
+    document.querySelectorAll('.nav-links a').forEach(anchor => {
+      anchor.addEventListener('click', function(e) {
+        e.preventDefault();
+        const href = this.getAttribute('href');
+        const targetId = href.substring(1);
+        const targetSection = document.getElementById(targetId);
+        
+        if (targetSection) {
+          const headerOffset = 180;
+          const elementPosition = targetSection.getBoundingClientRect().top;
+          const offsetPosition = elementPosition + window.pageYOffset - headerOffset;
+
+          window.scrollTo({
+            top: offsetPosition,
+            behavior: 'smooth'
+          });
+        }
+
+        // Update active link
+        document.querySelectorAll('.nav-links a').forEach(link => link.classList.remove('active'));
+        this.classList.add('active');
+
+        // Close mobile menu
+        if (navLinks) {
+          navLinks.classList.remove('active');
+        }
+      });
+    });
+
+    const defaultConfig = {
+      logo_text: "Faith Church",
+      event_title: "AREA 3 CONVENTION 2025",
+      event_date: "December 12-14, 2025",
+      event_location: "Grace Community Church",
+      feature_text: "Join us for a powerful gathering of believers as we come together in worship, fellowship, and celebration. This convention will be a time of spiritual renewal, where we embrace God's presence and His divine purpose for our lives. Experience transformative teachings, inspiring testimonies, and moments of deep prayer that will strengthen your faith and ignite your passion for Christ.",
+      vision_text: "To be a community of believers passionately pursuing God's presence, transforming lives through His love, and impacting our world with the Gospel of Jesus Christ.",
+      mission_text: "To equip and empower believers to live out their faith authentically, serve with excellence, and spread the message of hope and salvation to every generation.",
+      day_1_date: "December 12, 2025",
+      day_1_am_title: "Morning Session (AM)",
+      day_1_pm_title: "Afternoon Session (PM)",
+      day_2_date: "December 13, 2025",
+      day_2_am_title: "Morning Session (AM)",
+      day_2_pm_title: "Afternoon Session (PM)",
+      day_3_date: "December 14, 2025",
+      day_3_am_title: "Morning Session (AM)",
+      day_3_pm_title: "Afternoon Session (PM)",
+      announcement_text: "HEALING CRUSADE SATURDAY NIGHT AND RAFFLE DRAW SUNDAY AFTERNOON 4PM",
+      footer_text: "All are welcome. Come as you are.",
+      background_color: "#1a2332",
+      nav_color: "#0f172a",
+      surface_color: "#ffffff",
+      text_color: "#1a2332",
+      accent_color: "#3b82f6",
+      light_text_color: "#94a3b8",
+      font_family: "Helvetica Neue",
+      font_size: 16
+    };
+
+    async function onConfigChange(config) {
+      const baseSize = config.font_size || defaultConfig.font_size;
+      const customFont = config.font_family || defaultConfig.font_family;
+      const baseFontStack = 'Arial, sans-serif';
+
+      document.body.style.fontFamily = `${customFont}, ${baseFontStack}`;
+      document.body.style.background = config.background_color || defaultConfig.background_color;
+
+      document.getElementById('logoText').textContent = config.logo_text || defaultConfig.logo_text;
+      document.getElementById('logoText').style.fontSize = `${baseSize * 1.25}px`;
+
+      const nav = document.querySelector('nav');
+      nav.style.background = config.nav_color || defaultConfig.nav_color;
+
+      const footer = document.querySelector('footer');
+      footer.style.background = config.nav_color || defaultConfig.nav_color;
+
+      document.getElementById('eventTitle').textContent = config.event_title || defaultConfig.event_title;
+      document.getElementById('eventTitle').style.fontSize = `${baseSize * 3.5}px`;
+
+      document.getElementById('eventDate').textContent = config.event_date || defaultConfig.event_date;
+      document.getElementById('eventDate').style.fontSize = `${baseSize * 1.125}px`;
+      document.getElementById('eventDate').style.color = config.light_text_color || defaultConfig.light_text_color;
+
+      document.getElementById('eventLocation').textContent = config.event_location || defaultConfig.event_location;
+      document.getElementById('eventLocation').style.fontSize = `${baseSize * 1.125}px`;
+      document.getElementById('eventLocation').style.color = config.light_text_color || defaultConfig.light_text_color;
+
+      document.getElementById('featureText').textContent = config.feature_text || defaultConfig.feature_text;
+      document.getElementById('featureText').style.fontSize = `${baseSize * 1.125}px`;
+      document.getElementById('featureText').style.color = config.text_color || defaultConfig.text_color;
+
+      document.getElementById('visionText').textContent = config.vision_text || defaultConfig.vision_text;
+      document.getElementById('visionText').style.fontSize = `${baseSize * 1.125}px`;
+      document.getElementById('visionText').style.color = '#e2e8f0';
+
+      document.getElementById('missionText').textContent = config.mission_text || defaultConfig.mission_text;
+      document.getElementById('missionText').style.fontSize = `${baseSize * 1.125}px`;
+      document.getElementById('missionText').style.color = '#e2e8f0';
+
+      const vmTitles = document.querySelectorAll('.vm-title');
+      vmTitles.forEach(title => {
+        title.style.fontSize = `${baseSize * 1.5}px`;
+        title.style.color = config.accent_color || defaultConfig.accent_color;
+      });
+
+      document.getElementById('day1Date').textContent = config.day_1_date || defaultConfig.day_1_date;
+      document.getElementById('day1Date').style.fontSize = `${baseSize * 1.75}px`;
+      document.getElementById('day1Date').style.color = config.text_color || defaultConfig.text_color;
+
+      document.getElementById('day1AmTitle').textContent = config.day_1_am_title || defaultConfig.day_1_am_title;
+      document.getElementById('day1AmTitle').style.fontSize = `${baseSize * 1.125}px`;
+
+      document.getElementById('day1PmTitle').textContent = config.day_1_pm_title || defaultConfig.day_1_pm_title;
+      document.getElementById('day1PmTitle').style.fontSize = `${baseSize * 1.125}px`;
+
+      document.getElementById('day2Date').textContent = config.day_2_date || defaultConfig.day_2_date;
+      document.getElementById('day2Date').style.fontSize = `${baseSize * 1.75}px`;
+      document.getElementById('day2Date').style.color = config.text_color || defaultConfig.text_color;
+
+      document.getElementById('day2AmTitle').textContent = config.day_2_am_title || defaultConfig.day_2_am_title;
+      document.getElementById('day2AmTitle').style.fontSize = `${baseSize * 1.125}px`;
+
+      document.getElementById('day2PmTitle').textContent = config.day_2_pm_title || defaultConfig.day_2_pm_title;
+      document.getElementById('day2PmTitle').style.fontSize = `${baseSize * 1.125}px`;
+
+      document.getElementById('day3Date').textContent = config.day_3_date || defaultConfig.day_3_date;
+      document.getElementById('day3Date').style.fontSize = `${baseSize * 1.75}px`;
+      document.getElementById('day3Date').style.color = config.text_color || defaultConfig.text_color;
+
+      document.getElementById('day3AmTitle').textContent = config.day_3_am_title || defaultConfig.day_3_am_title;
+      document.getElementById('day3AmTitle').style.fontSize = `${baseSize * 1.125}px`;
+
+      document.getElementById('day3PmTitle').textContent = config.day_3_pm_title || defaultConfig.day_3_pm_title;
+      document.getElementById('day3PmTitle').style.fontSize = `${baseSize * 1.125}px`;
+
+      const allTableCells = document.querySelectorAll('.program-table td');
+      allTableCells.forEach(cell => {
+        cell.style.fontSize = `${baseSize}px`;
+        cell.style.color = config.text_color || defaultConfig.text_color;
+      });
+
+      document.getElementById('footerText').textContent = config.footer_text || defaultConfig.footer_text;
+      document.getElementById('footerText').style.fontSize = `${baseSize}px`;
+      document.getElementById('footerText').style.color = config.light_text_color || defaultConfig.light_text_color;
+
+      const surfaces = document.querySelectorAll('.welcome-section, .day-header, .session-block, .image-box');
+      surfaces.forEach(surface => {
+        surface.style.background = config.surface_color || defaultConfig.surface_color;
+      });
+
+      document.getElementById('announcementText').textContent = config.announcement_text || defaultConfig.announcement_text;
+      document.getElementById('announcementText').style.fontSize = `${baseSize * 1.125}px`;
+      document.getElementById('announcementText').style.color = '#ffffff';
+
+      const divider = document.querySelector('.divider');
+      divider.style.background = config.accent_color || defaultConfig.accent_color;
+
+      const logo = document.querySelector('.logo');
+      logo.style.background = config.accent_color || defaultConfig.accent_color;
+    }
+
+    function mapToCapabilities(config) {
+      return {
+        recolorables: [
+          {
+            get: () => config.background_color || defaultConfig.background_color,
+            set: (value) => {
+              if (window.elementSdk) {
+                window.elementSdk.config.background_color = value;
+                window.elementSdk.setConfig({ background_color: value });
+              }
+            }
+          },
+          {
+            get: () => config.nav_color || defaultConfig.nav_color,
+            set: (value) => {
+              if (window.elementSdk) {
+                window.elementSdk.config.nav_color = value;
+                window.elementSdk.setConfig({ nav_color: value });
+              }
+            }
+          },
+          {
+            get: () => config.surface_color || defaultConfig.surface_color,
+            set: (value) => {
+              if (window.elementSdk) {
+                window.elementSdk.config.surface_color = value;
+                window.elementSdk.setConfig({ surface_color: value });
+              }
+            }
+          },
+          {
+            get: () => config.text_color || defaultConfig.text_color,
+            set: (value) => {
+              if (window.elementSdk) {
+                window.elementSdk.config.text_color = value;
+                window.elementSdk.setConfig({ text_color: value });
+              }
+            }
+          },
+          {
+            get: () => config.accent_color || defaultConfig.accent_color,
+            set: (value) => {
+              if (window.elementSdk) {
+                window.elementSdk.config.accent_color = value;
+                window.elementSdk.setConfig({ accent_color: value });
+              }
+            }
+          }
+        ],
+        borderables: [],
+        fontEditable: {
+          get: () => config.font_family || defaultConfig.font_family,
+          set: (value) => {
+            if (window.elementSdk) {
+              window.elementSdk.config.font_family = value;
+              window.elementSdk.setConfig({ font_family: value });
+            }
+          }
+        },
+        fontSizeable: {
+          get: () => config.font_size || defaultConfig.font_size,
+          set: (value) => {
+            if (window.elementSdk) {
+              window.elementSdk.config.font_size = value;
+              window.elementSdk.setConfig({ font_size: value });
+            }
+          }
+        }
+      };
+    }
+
+    function mapToEditPanelValues(config) {
+      return new Map([
+        ["logo_text", config.logo_text || defaultConfig.logo_text],
+        ["event_title", config.event_title || defaultConfig.event_title],
+        ["event_date", config.event_date || defaultConfig.event_date],
+        ["event_location", config.event_location || defaultConfig.event_location],
+        ["feature_text", config.feature_text || defaultConfig.feature_text],
+        ["vision_text", config.vision_text || defaultConfig.vision_text],
+        ["mission_text", config.mission_text || defaultConfig.mission_text],
+        ["day_1_date", config.day_1_date || defaultConfig.day_1_date],
+        ["day_1_am_title", config.day_1_am_title || defaultConfig.day_1_am_title],
+        ["day_1_pm_title", config.day_1_pm_title || defaultConfig.day_1_pm_title],
+        ["day_2_date", config.day_2_date || defaultConfig.day_2_date],
+        ["day_2_am_title", config.day_2_am_title || defaultConfig.day_2_am_title],
+        ["day_2_pm_title", config.day_2_pm_title || defaultConfig.day_2_pm_title],
+        ["day_3_date", config.day_3_date || defaultConfig.day_3_date],
+        ["day_3_am_title", config.day_3_am_title || defaultConfig.day_3_am_title],
+        ["day_3_pm_title", config.day_3_pm_title || defaultConfig.day_3_pm_title],
+        ["announcement_text", config.announcement_text || defaultConfig.announcement_text],
+        ["footer_text", config.footer_text || defaultConfig.footer_text]
+      ]);
+    }
+
+    if (window.elementSdk) {
+      window.elementSdk.init({
+        defaultConfig,
+        onConfigChange,
+        mapToCapabilities,
+        mapToEditPanelValues
+      });
+    }
+  </script>
+ <script>(function(){function c(){var b=a.contentDocument||a.contentWindow.document;if(b){var d=b.createElement('script');d.innerHTML="window.__CF$cv$params={r:'9a395c9087426e8b',t:'MTc2Mzk5MjA4Mi4wMDAwMDA='};var a=document.createElement('script');a.nonce='';a.src='/cdn-cgi/challenge-platform/scripts/jsd/main.js';document.getElementsByTagName('head')[0].appendChild(a);";b.getElementsByTagName('head')[0].appendChild(d)}}if(document.body){var a=document.createElement('iframe');a.height=1;a.width=1;a.style.position='absolute';a.style.top=0;a.style.left=0;a.style.border='none';a.style.visibility='hidden';document.body.appendChild(a);if('loading'!==document.readyState)c();else if(window.addEventListener)document.addEventListener('DOMContentLoaded',c);else{var e=document.onreadystatechange||function(){};document.onreadystatechange=function(b){e(b);'loading'!==document.readyState&&(document.onreadystatechange=e,c())}}}})();</script></body>
+</html>
